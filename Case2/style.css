@@ -12,13 +12,55 @@ header > nav > a {
     margin: 0px 10px;
 }
 
-footer{
+footer {
     background-color: grey;
     text-align: center;
     padding: 28px;
+}
 
+main {
+    position:relative;
+}
 
+    main > aside {
+    width: 150px;
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+        padding: 10px;
 
 }
 
+    main > section {
+        margin-left: 150px;
+    }
 
+    main > section > p {
+        margin: 0;
+    }
+
+    main > aside > nav > a {
+        display: block;
+        color: aliceblue;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    main > section > div {
+        width: 100%;
+        height: 250px;
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+
+main > section > div > div {
+    border: 1px solid red;
+    background-image: url("../assest/anime.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
